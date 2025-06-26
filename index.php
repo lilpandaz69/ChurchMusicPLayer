@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src//assets/css/all.min.css">
+    <link rel="stylesheet" href="src/assets/css/all.min.css">
     <link rel="stylesheet" href="src/assets/css/main.css">
     <title>رنملي</title>
 </head>
@@ -32,15 +32,15 @@
       <i class="fas fa-download me-3"></i> <span class="me-4">Install App</span>
       <i class="fas fa-bell me-4"></i>
       <i class="fas fa-users me-4"></i>
-      <img src="https://    i.pravatar.cc/40" class="rounded-circle" alt="avatar" width="32">
+      <img src="pics/600x600bf-60.jpg" alt="avatar" width="32">
     </div>
 
   </div>
 </nav>
 
-    <script src="/src/assets/Js/all.min.js"></script>
+    <script src="src/assets/Js/all.min.js"></script>
     <script src="src/assets/Js/bootstrap.bundle.min.js"></script>
-    <script src="src/assets/Js//bootstrap.bundle.min.js.map"></script>
+    <script src="src/assets/Js/bootstrap.bundle.min.js.map"></script>
     <script src="src/assets/Js/index.js"></script>
 </body>
 </html>
