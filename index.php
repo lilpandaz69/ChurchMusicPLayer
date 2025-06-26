@@ -1,3 +1,4 @@
+<?php include 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +25,6 @@
     <div class="search-wrapper mx-3">
       <i class="fas fa-search me-2"></i>
       <input type="text" placeholder="What do you want to play?" />
-      <i class="fas fa-box-archive ms-2"></i>
     </div>
 
     <!-- Right side: icons -->
@@ -38,6 +38,23 @@
   </div>
 </nav>
 
+<div class="container mt-5">
+  <h2 class="text-white mb-4">Available Songs</h2>
+  <div class="list-group">
+    <?php
+      $result = $conn->query("SELECT * FROM songs");
+      while ($row = $result->fetch_assoc()) {
+        echo '<div class="list-group-ixtem bg-secondary text-white mb-3 rounded">';
+        echo '<strong>' . htmlspecialchars($row['title']) . '</strong> - ' . htmlspecialchars($row['artist']) . '<br>';
+        echo '<audio controls class="w-100 mt-2">';
+        echo '<source src="uploads/' . htmlspecialchars($row['file_path']) . '" type="audio/mpeg">';
+        echo 'Your browser does not support the audio element.';
+        echo '</audio>';
+        echo '</div>';
+      }
+    ?>
+  </div>
+</div>
     <script src="src/assets/Js/all.min.js"></script>
     <script src="src/assets/Js/bootstrap.bundle.min.js"></script>
     <script src="src/assets/Js/bootstrap.bundle.min.js.map"></script>
