@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/all.min.css">
-    <link rel="stylesheet" href="src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src//assets/css/all.min.css">
+    <link rel="stylesheet" href="src/assets/css/main.css">
     <title>رنملي</title>
 </head>
 <body>
@@ -38,9 +38,9 @@
   </div>
 </nav>
 
-    <script src="src/Js/all.min.js"></script>
-    <script src="src/Js/bootstrap.bundle.min.js"></script>
-    <script src="src/Js/bootstrap.bundle.min.js.map"></script>
-    <script src="src/Js/index.js"></script>
+    <script src="/src/assets/Js/all.min.js"></script>
+    <script src="src/assets/Js/bootstrap.bundle.min.js"></script>
+    <script src="src/assets/Js//bootstrap.bundle.min.js.map"></script>
+    <script src="src/assets/Js/index.js"></script>
 </body>
 </html>
