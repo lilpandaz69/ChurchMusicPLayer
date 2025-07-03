@@ -9,9 +9,10 @@ CREATE TABLE IF NOT EXISTS songs (
   file_path VARCHAR(255)
 );
 
--- أمثلة (اختياري لو عايز تملا شوية بيانات مؤقتًا)
 INSERT INTO songs (title, artist, file_path) VALUES
 ('kalmeny belel', 'marwan mousa', 'Marwaa.mp3'),
-('Graceful Light', 'Choir B', 'song2.mp3');
+('kalmeny belel', 'marwan mousa', 'Lege-Cy - Elwa2t Eldaye3  ليجي سي - الوقت الضايع (Official Audio).mp3'),
+('kalmeny belel', 'marwan mousa', 'Lella Fadda x @Abyusif - ATTA3 للا فضة و ابيوسف - قطع.mp3'),
+('Graceful Light', 'Choir B', 'Lege-Cy - El Neyya  ليجي-سي - النيه (Official Audio).mp3');
 
 

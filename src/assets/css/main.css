@@ -1,8 +1,12 @@
-
+body {
+  background: #1A1A1A;
+  /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+  /* font-family: "Passion One", sans-serif; */
+}
 
 .navbar {
   background-color: #121212;
-  
+  height: 70px;
 }
 
 .navbar .form-control {
@@ -39,3 +43,208 @@
   color: white;
   flex: 1;
 }
+/* nav */
+.landin {
+    background-image:url(../../../pics/ChatGPT\ Image\ Jul\ 2\,\ 2025\,\ 04_21_28\ PM.png) ;
+    background-size: cover;
+    height: calc(100vh - 64px);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 320px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.landin h1 {
+    margin: 0;
+    color:#10cab7;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.landin p {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+/* landing */
+.cardat .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card1 {
+  direction: rtl;
+  width: 250px;
+  min-width: 140px;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.card1 h3 {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.card1 p {
+  color: #8f8e8e;
+}
+
+.card1:hover {
+    background-color: #4e4e4e;
+    border-radius: 6px;
+}
+
+
+.card1 img {
+  border-radius: 6px;
+}
+
+.card1 p:hover {
+  text-decoration: underline;
+}
+
+.card1 {
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card1 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* الزرار */
+.bav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1db954; /* لون أخضر زي Spotify */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  opacity: 0; /* مخفي في العادي */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* عند الـhover يظهر */
+.card1:hover .bav {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* لو حبيت عند hover على الزرار نفسه يكبر أكثر */
+.bav:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.cardat2 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 60px; */
+  gap: 20px;
+}
+
+.card2{
+  direction: rtl;
+  width: 250px;
+  min-width: 140px;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.card2 h3 {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.card2:hover h3 {
+  color: black; 
+}
+
+.card2 p {
+  color: #8f8e8e;
+}
+
+.card2:hover {
+    background-color: #4e4e4e;
+    border-radius: 6px;
+}
+
+
+.card2 img {
+  border-radius: 6px;
+}
+
+.card2 p:hover {
+  text-decoration: underline;
+}
+
+.card2 {
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* الزرار */
+.bav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1db954; /* لون أخضر زي Spotify */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  opacity: 0; /* مخفي في العادي */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* عند الـhover يظهر */
+.card2:hover .bav {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* لو حبيت عند hover على الزرار نفسه يكبر أكثر */
+.bav:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
