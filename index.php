@@ -14,6 +14,7 @@ if (isset($_GET['query'])) {
   <link rel="stylesheet" href="src/assets/css/all.min.css" />
   <link rel="stylesheet" href="main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="pics/600x600bf-60-removebg-preview.png">
 </head>
 <body>
 
@@ -21,7 +22,7 @@ if (isset($_GET['query'])) {
 <nav class="navbar navbar-expand-lg px-3">
   <div class="container-fluid align-items-center d-flex justify-content-between">
     <div class="d-flex align-items-center">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="logo" width="32" class="me-3">
+      <img src="pics/600x600bf-60-removebg-preview.png" alt="logo" width="32" class="me-3">
       <button class="icon-btn border-0 text-white"><i class="fas fa-home"></i></button>
     </div>
     <form action="php/search.php" method="GET" class="search-wrapper mx-3 d-flex align-items-center">
