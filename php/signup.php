@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // تسجيل ناجح - ممكن تعمل redirect لل login أو تعرض رسالة نجاح
             // header("Location: ../login.html");
             // exit();
-
+            header("Location: ../index.php");
             $message = "تم التسجيل بنجاح، يمكنك الآن تسجيل الدخول.";
         } else {
             $message = "حدث خطأ أثناء التسجيل.";
