@@ -39,11 +39,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="email" name="email" placeholder="الإيميل" required />
         <input type="password" name="password" placeholder="كلمة المرور" required />
         <button type="submit">دخول</button>
-    </form>
-
-    <?php if ($message != ""): ?>
+         <?php if ($message != ""): ?>
         <p style="color: red; text-align: center; margin-top: 15px;"><?php echo $message; ?></p>
     <?php endif; ?>
 
+    </form>
+
+   
 </body>
 </html>
