@@ -24,8 +24,8 @@
       <input type="text" placeholder="عايز تسمع ترنيمة اية؟" />
     </div>
     <div class="d-flex align-items-center text-white">
-      <button type="button" class="btn btn-outline-primary ms-2">Log in</button>
-      <button type="button" class="btn btn-outline-secondary ms-2 me-2">Sign up</button>
+      <a href="html/login.html"><button type="button" class="btn btn-outline-primary ms-2">Log in</button></a>
+      <a href="html/signup.html"> <button type="button" class="btn btn-outline-secondary ms-2 me-2">Sign up</button></a>
     </div>
   </div>
 </nav>

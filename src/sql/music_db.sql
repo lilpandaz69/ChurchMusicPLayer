@@ -10,6 +10,15 @@ CREATE TABLE IF NOT EXISTS songs (
   file_Pathp VARCHAR(255)
 );
 
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
 INSERT INTO songs (title, artist, file_path , file_Pathp) VALUES
 ('kalmeny belel', 'marwan mousa', 'Marwaa.mp3','download(2).jpg'),
 ('el wa2t el daye3', 'marwan mousa', 'Lege-Cy - Elwa2t Eldaye3  ليجي سي - الوقت الضايع (Official Audio).mp3', 'download(3).jpg'),
