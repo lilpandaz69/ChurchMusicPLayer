@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../html/login.css">
+    <link rel="stylesheet" href="../src/assets/css/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>تسجيل الدخول</title>
 </head>

@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>تسجيل حساب جديد</title>
-  <link rel="stylesheet" href="../html/signup.css" />
+  <link rel="stylesheet" href="../src/assets/css/signup.css" />
 </head>
 <body>
   <form action="signup.php" method="POST">
