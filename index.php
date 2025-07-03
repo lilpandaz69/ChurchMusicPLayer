@@ -1,4 +1,5 @@
-<?php include 'db.php'; ?>
+<?php include 'db.php';
+session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,21 +15,27 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg px-3">
-  <div class="container-fluid align-items-center d-flex justify-content-between">
-    <div class="d-flex align-items-center">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="logo" width="32" class="me-3" />
-      <button class="icon-btn border-0 text-white"><i class="fas fa-home"></i></button>
+    <div class="container-fluid align-items-center d-flex justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="logo" width="32" class="me-3">
+        <button class="icon-btn border-0 text-white"><i class="fas fa-home"></i></button>
+      </div>
+      <div class="search-wrapper mx-3">
+        <i class="fas fa-search me-2"></i>
+        <input type="text" placeholder="عايز تسمع ترنيمة ايه؟">
+      </div>
+      <div class="d-flex align-items-center text-white">
+        <?php if (isset($_SESSION['username'])): ?>
+          <span class="me-3 fw-bold"><?= htmlspecialchars($_SESSION['username']) ?></span>
+          <a href="php/logout.php" class="btn btn-outline-danger">Logout</a>
+        <?php else: ?>
+          <a href="php/login.php" class="btn btn-outline-primary ms-2">Login</a>
+          <a href="php/signup.php" class="btn btn-outline-secondary ms-2 me-2">Sign up</a>
+        <?php endif; ?>
+      </div>
     </div>
-    <div class="search-wrapper mx-3">
-      <i class="fas fa-search me-2"></i>
-      <input type="text" placeholder="عايز تسمع ترنيمة اية؟" />
-    </div>
-    <div class="d-flex align-items-center text-white">
-      <a href="html/login.html"><button type="button" class="btn btn-outline-primary ms-2">Log in</button></a>
-      <a href="html/signup.html"> <button type="button" class="btn btn-outline-secondary ms-2 me-2">Sign up</button></a>
-    </div>
-  </div>
-</nav>
+  </nav>
+
 
 <!-- Landing -->
 <div class="landin">

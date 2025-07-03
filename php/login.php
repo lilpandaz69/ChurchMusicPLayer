@@ -1,6 +1,8 @@
 <?php
-include 'db.php';
 session_start();
+include '../db.php';
+
+$message = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email    = $_POST['email'];
@@ -9,15 +11,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
+
     $result = $stmt->get_result();
     $user   = $result->fetch_assoc();
 
     if ($user && password_verify($password, $user['password'])) {
-        $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
-        header("Location: index.php");
+        header("Location: ../index.php");
+        exit();
     } else {
-        echo "البريد الإلكتروني أو كلمة السر غير صحيحة.";
+        $message = "الإيميل أو كلمة المرور غير صحيحة";
     }
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>تسجيل الدخول</title>
+</head>
+<body>
+    <form action="login.php" method="POST">
+        <input type="email" name="email" placeholder="الإيميل" required />
+        <input type="password" name="password" placeholder="كلمة المرور" required />
+        <button type="submit">دخول</button>
+    </form>
+
+    <?php if ($message != ""): ?>
+        <p style="color: red; text-align: center; margin-top: 15px;"><?php echo $message; ?></p>
+    <?php endif; ?>
+
+</body>
+</html>
