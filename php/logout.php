@@ -1,7 +1,7 @@
 <?php
 session_start();
-session_unset();  // حذف بيانات الـ session
-session_destroy(); // إنهاء الجلسة
+session_unset();  
+session_destroy();
 
 header("Location: ../index.php");
 exit();

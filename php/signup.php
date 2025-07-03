@@ -1,14 +1,13 @@
 <?php
 include '../db.php';
 
-$message = "";  // رسالة الخطأ أو النجاح
+$message = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $email    = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    // Check if email already exists
     $check = $conn->prepare("SELECT id FROM users WHERE email = ?");
     $check->bind_param("s", $email);
     $check->execute();
@@ -20,9 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
         $stmt->bind_param("sss", $username, $email, $password);
         if ($stmt->execute()) {
-            // تسجيل ناجح - ممكن تعمل redirect لل login أو تعرض رسالة نجاح
-            // header("Location: ../login.html");
-            // exit();
             header("Location: ../index.php");
             $message = "تم التسجيل بنجاح، يمكنك الآن تسجيل الدخول.";
         } else {

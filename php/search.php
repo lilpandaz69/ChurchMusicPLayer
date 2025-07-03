@@ -36,7 +36,7 @@ if (isset($_GET['query'])) {
 </head>
 <body>
 
-<!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg px-3">
   <div class="container-fluid align-items-center d-flex justify-content-between">
     <div class="d-flex align-items-center">
@@ -59,7 +59,7 @@ if (isset($_GET['query'])) {
   </div>
 </nav>
 
-<!-- نتائج البحث -->
+
 <div class="cardat" style="margin-top: 20px;">
   <div class="container mt-4 text-center">
     <h2 class="text-white mb-4 fw-bold">
@@ -97,7 +97,7 @@ if (isset($_GET['query'])) {
   </div>
 </div>
 
-<!-- Global Audio Player -->
+
 <audio id="globalPlayer" class="d-none">
   <source id="audioSource" src="" type="audio/mpeg">
   Your browser does not support the audio element.
@@ -116,7 +116,7 @@ if (isset($_GET['query'])) {
 </div>
 </footer>
 
-<!-- Scripts -->
+
 <script src="../src/assets/Js/bootstrap.bundle.min.js"></script>
 <script src="../src/assets/Js/all.min.js"></script>
 <script src="../index.js"></script>
