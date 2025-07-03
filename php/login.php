@@ -35,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <form action="login.php" method="POST">
+        <h2>تسجيل الدخول</h2>
         <input type="email" name="email" placeholder="الإيميل" required />
         <input type="password" name="password" placeholder="كلمة المرور" required />
         <button type="submit">دخول</button>
